@@ -13,6 +13,11 @@ require "find"
   }
 end
 
+require 'sass/plugin/rack'
+# use scss for stylesheets
+Sass::Plugin.options[:style] = :compressed
+use Sass::Plugin::Rack
+
 # Load app
 require "reminder_sinatra"
 run ReminderSinatra
