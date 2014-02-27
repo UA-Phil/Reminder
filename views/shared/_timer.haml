@@ -1,3 +1,18 @@
 %script{src:"javascripts/jquery.js"}
 %script{src:"javascripts/jquery.parallax.js"}
+%script{src:"javascripts/script.js"}
 %h1 Hello World
+.container
+	%ul#scene{"data-calibrate-x" => "false", "data-calibrate-y" => "false", "data-friction-x" => "0.2", "data-friction-y" => "0.1", "data-invert-x" => "false", "data-invert-y" => "false", "data-limit-x" => "false", "data-limit-y" => "4", "data-scalar-x" => "5", "data-scalar-y" => "5"}
+		%li.layer{"data-depth" => "0.00"}
+			%img{src:'images/layer_1.png'}
+		%li.layer{"data-depth" => "0.20"}
+			%img{src:'images/layer_2.png'}      
+		%li.layer{"data-depth" => "0.40"}
+			%img{src:'images/layer_3.png'}      
+		%li.layer{"data-depth" => "0.60"}
+			%img{src:'images/layer_4.png'}
+		%li.layer{"data-depth" => "1.00"}
+			%img{src:'images/layer_5.png'}      
+		%li.layer{"data-depth" => "1.00"}
+			%img{src:'images/layer_6.png'}
